@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="sp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E2A3F"/>
+      <stop offset="1" stop-color="#071521"/>
+    </linearGradient>
+    <linearGradient id="sp-p" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5CE1FF"/>
+      <stop offset="1" stop-color="#2F7BFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#sp-bg)" stroke="#2F7BFF" stroke-opacity=".55" stroke-width="1.5"/>
+  <!-- QR finder corners -->
+  <g fill="none" stroke="#5CE1FF" stroke-width="3" stroke-linecap="round">
+    <path d="M12 20v-8h8"/>
+    <path d="M44 12h8v8"/>
+    <path d="M12 44v8h8"/>
+    <path d="M52 44v8h-8"/>
+  </g>
+  <!-- P -->
+  <path fill="url(#sp-p)" fill-rule="evenodd" d="M24 17h11.5a10.5 10.5 0 0 1 0 21H31v9h-7Zm7 6.5v8h4a4 4 0 0 0 0-8Z"/>
+</svg>
