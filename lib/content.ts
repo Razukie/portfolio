@@ -1,6 +1,7 @@
 import { Section } from "./types";
 import { TechIconKey } from "./techIcons";
 import { SocialKey } from "./socialIcons";
+import { asset } from "./asset";
 
 export interface ProjectItem {
   title: string;
@@ -155,7 +156,7 @@ const workProjects: ProjectItem[] = [
     tags: "Sports Management / Real-time Results / Brackets / Medal Tally",
     description:
       "A sports management platform built for MSUSAA 2K26 that brings event brackets, real-time match results and the overall medal tally together in one place.",
-    logo: "/assets/logos/msu.png",
+    logo: asset("/assets/logos/msu.png"),
     client: "MSU MAIN CAMPUS",
   },
   {
@@ -163,7 +164,7 @@ const workProjects: ProjectItem[] = [
     tags: "Document Routing / Firebase / Workflow Management",
     description:
       "An internal document tracking system for DPWH CAR, built on Firebase, for routing documents between offices, tracking the status of each document and keeping the approval workflow transparent.",
-    logo: "/assets/logos/dpwh.png",
+    logo: asset("/assets/logos/dpwh.png"),
     client: "DPWH CAR",
   },
   {
@@ -171,7 +172,7 @@ const workProjects: ProjectItem[] = [
     tags: "Web Application / Student Evaluation / API Integration",
     description:
       "A web application for running student evaluations, with API integration for exchanging evaluation data with other systems.",
-    logo: "/assets/logos/msu.png",
+    logo: asset("/assets/logos/msu.png"),
     client: "MSU MAIN CAMPUS",
   },
   {
@@ -179,14 +180,14 @@ const workProjects: ProjectItem[] = [
     tags: "Parking System / React / Firebase / QR Workflow",
     description:
       "A parking management system built with React and Firebase, using a QR-based workflow to handle parking access and records.",
-    logo: "/assets/logos/seepark.svg",
+    logo: asset("/assets/logos/seepark.svg"),
   },
   {
     title: "MSU ONLINE CLEARANCE",
     tags: "Web Application / Clearance Workflow",
     description:
       "A web application that moves the clearance process online, so students can complete and track their clearance requirements without paper forms.",
-    logo: "/assets/logos/msu.png",
+    logo: asset("/assets/logos/msu.png"),
     client: "MSU MAIN CAMPUS",
   },
   {
@@ -194,7 +195,7 @@ const workProjects: ProjectItem[] = [
     tags: "Booking System / Doctor Availability / Patient Appointments",
     description:
       "An online booking system where patients see which doctors are available and choose their doctor when booking an appointment.",
-    logo: "/assets/logos/medclinic.svg",
+    logo: asset("/assets/logos/medclinic.svg"),
   },
 ];
 
@@ -218,7 +219,7 @@ export const content: Record<Section, SectionContent> = {
       "I turn real-world requirements into functional, efficient, and user-centered software solutions.",
     ],
     profile: {
-      photo: "/assets/profile.jpg",
+      photo: asset("/assets/profile.jpg"),
       name: "Abdul Razak Tocalo Muripaga",
       role: "Software Developer / Web Developer",
       facts: [
@@ -303,7 +304,7 @@ export const content: Record<Section, SectionContent> = {
           type: "ORGANIZATION",
           x: 25,
           y: 30,
-          logo: "/assets/logos/msu.png",
+          logo: asset("/assets/logos/msu.png"),
           notes:
             "Alma mater, and the institution behind several of the systems on this board: ONEMSU, the MSU Evaluation System and MSU Online Clearance.",
         },
@@ -324,7 +325,7 @@ export const content: Record<Section, SectionContent> = {
           type: "ORGANIZATION",
           x: 76,
           y: 26,
-          logo: "/assets/logos/dpwh.png",
+          logo: asset("/assets/logos/dpwh.png"),
           notes:
             "Department of Public Works and Highways, Cordillera Administrative Region (CAR) — IT work spanning programming, network and database administration, technical support and graphic design, including the Internal Document Tracking System.",
           roles: [
@@ -352,7 +353,7 @@ export const content: Record<Section, SectionContent> = {
           type: "ORGANIZATION",
           x: 32,
           y: 80,
-          logo: "/assets/logos/ncmf.png",
+          logo: asset("/assets/logos/ncmf.png"),
           notes:
             "National Commission on Muslim Filipinos — North Luzon. On-the-job training completed as part of the BS Information Technology program, where I developed NCMF Apps.",
         },
@@ -396,8 +397,8 @@ export const content: Record<Section, SectionContent> = {
     resume: {
       name: "Abdul Razak T. Muripaga",
       headline: "Software & Web Developer · Computer Programmer",
-      photo: "/assets/profile.jpg",
-      pdf: "/assets/abdul-razak-resume.pdf",
+      photo: asset("/assets/profile.jpg"),
+      pdf: asset("/assets/abdul-razak-resume.pdf"),
       contact: [
         { kind: "phone", value: "0963 924 4571", href: "tel:+639639244571" },
         { kind: "email", value: "muripaga.at99@s.msumain.edu.ph", href: "mailto:muripaga.at99@s.msumain.edu.ph" },

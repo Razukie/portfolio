@@ -2,6 +2,7 @@ import { Section } from "@/lib/types";
 import Image from "next/image";
 import { content, SectionContent } from "@/lib/content";
 import SkillMatrix from "./SkillMatrix";
+import { asset } from "@/lib/asset";
 import ServerRoom from "./ServerRoom";
 import EvidenceBoard from "./EvidenceBoard";
 import ContactPanel from "./ContactPanel";
@@ -15,7 +16,7 @@ interface PanelProps {
 }
 
 function downloadResume() {
-  window.open("/assets/abdul-razak-resume.pdf", "_blank");
+  window.open(asset("/assets/abdul-razak-resume.pdf"), "_blank");
 }
 
 function ProfileView({ data }: { data: SectionContent }) {

@@ -37,6 +37,23 @@ npm run dev
 
 Then open http://localhost:3000.
 
+## Deploying (GitHub Pages)
+
+The site is a static export (`next.config.mjs` → `output: "export"`) published by
+`.github/workflows/deploy.yml` on every push to `main`, at
+**https://razukie.github.io/portfolio/**.
+
+One-time setup on GitHub:
+
+1. **Settings → Pages → Build and deployment → Source:** choose **GitHub Actions**.
+2. **Settings → Secrets and variables → Actions → New repository secret**, add:
+   `NEXT_PUBLIC_EMAILJS_SERVICE_ID`, `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`, `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+   (same values as your `.env.local`).
+3. Push to `main` (or re-run the workflow from the **Actions** tab).
+
+Files in `public/` must be referenced through `asset()` from `lib/asset.ts`, which adds
+the `/portfolio` prefix the site needs on GitHub Pages.
+
 ## Before shipping
 
 - Drop your resume PDF at `public/assets/abdul-razak-resume.pdf`.
